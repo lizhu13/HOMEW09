@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>随机取值范围</title>
+</head>
+<body>
+<script>
+
+    var x, y, z;//z 为大于0的整数
+
+    var a = Math.random();//取值范围是（0 ，1）
+    console.log(a);
+
+    var b = parseInt(Math.random() * (y - x + 1));//取值范围是[ x ，y）
+    console.log(b);
+
+    var c = parseInt(Math.random() * (y - x + 1) + z);//取值范围是[ x + z ，y + z -1 ]
+    console.log(c);
+
+    var d = Math.random() * (y - x + 1) + z;//取值范围是（ x + z ，y + z -1 ]
+    console.log(d);
+
+</script>
+</body>
+</html>
