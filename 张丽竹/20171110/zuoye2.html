@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>zuoye2</title>
+</head>
+<body>
+<script>
+
+    function jc(a) {
+        var cj = 1;
+        for(var i = 1; i <= a; i++){
+            cj *= i;
+        }
+        return cj;
+    }
+
+    for(var num = 100; num <= 999; num++){
+
+        var gewei = num % 10;
+        var shiwei = parseInt(num / 10) % 10;
+        var baiwei = parseInt(num / 100);
+
+        var sum = jc(gewei) + jc(shiwei) + jc(baiwei);
+
+        if(num === sum){
+            console.log(num);
+            break;
+        }
+    }
+
+
+</script>
+</body>
+</html>

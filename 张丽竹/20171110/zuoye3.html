@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>zuoye3</title>
+</head>
+<body>
+<script>
+
+    function rev(a){
+        var n = wei(a);
+        var sum = 0;
+        for(var i=1;i<=n;i++){
+            sum += parseInt(a/Math.pow(10,i-1)) % 10 * (Math.pow(10,n-i));
+        }
+        return sum;
+    }
+//求有多少位
+    function wei(b) {
+        for (var i = 1; true; i++) {
+            if (parseInt(b / Math.pow(10, i)) < 1) {
+                return i;
+            }
+        }
+    }
+
+
+    var a = parseInt(prompt("请输入一个整数："));
+    var hou = rev(a);
+    console.log(a+"的反是："+ hou);
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

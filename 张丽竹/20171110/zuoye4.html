@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>zuoye4</title>
+</head>
+<body>
+<script>
+
+    function yueshu(i) {
+        var sum = 0;
+        for(var x = 1; x < i; x++){
+            if(i % x === 0){
+                sum += x;
+            }
+        }
+        return sum;
+    }
+
+    for(var b = 1;b <= 3000; b++){
+        var a = yueshu(b);
+        if(b == yueshu(a)){
+            console.log(a + "和"+ b + "是完全亲密数。")；
+        }
+    }
+
+
+</script>
+</body>
+</html>
