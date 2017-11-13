@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>9</title>
+</head>
+<body>
+<script>
+
+    var a,b,c;
+    for(a = 1;a <= 100;a++){
+        for(b = 1;b <= 100; b++){
+            for(c = 1; c <= 100; c++){
+                if(a + b < c || b + c < a && (a * a + b * b === c * c)){
+                    console.log("两个直角边是" + a +"和" + b +"，斜边是" + c);
+                }
+            }
+        }
+    }
+
+
+
+
+
+</script>
+</body>
+</html>
