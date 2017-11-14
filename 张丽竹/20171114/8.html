@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8</title>
+</head>
+<body>
+<script>
+
+    var a = prompt("输入昵称");
+    var reg = /^[\w\u4e00-\u9fa5a-zA-Z0-9_]{6,8}$/;
+    if(reg.test(a)){
+        alert("昵称由6-8位组成");
+    }else{
+        alert("昵称不是6-8位组成");
+    }
+
+</script>
+</body>
+</html>

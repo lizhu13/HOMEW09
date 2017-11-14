@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8</title>
+</head>
+<body>
+<script>
+    var a = [32,87,67,90,56,54,76,37,61,64];
+    var max = a[0], min = a[0];
+    var x = 0, n = 0;
+    for(var i = 1; i < 10 ; i++){
+        if(a[i] > max){
+            max = a[i];
+            x = i;
+        }
+        if(a[i] < min){
+            min = a[i];
+            n = i;
+        }
+    }
+    console.log("最高分学生是第" + x + "位，最低分学生是第" + n + "位。");
+
+
+
+
+</script>
+</body>
+</html>
