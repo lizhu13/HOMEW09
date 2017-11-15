@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>冒泡</title>
+</head>
+<body>
+<script>
+    var arr = [23,53,4,65,43];
+    function paiXu(array) {
+        var length = array.length;
+           var i, j, temp;
+        for (i = length - 1; 0 < i; i--) {
+            for (j = 0; j < i; j++) {
+                if (array[j] > array[j + 1]) {
+                    temp = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
+                }
+            }
+        }
+        return array;
+    }
+    var newResult = paiXu(arr);
+    console.log(newResult);
+
+</script>
+</body>
+</html>
