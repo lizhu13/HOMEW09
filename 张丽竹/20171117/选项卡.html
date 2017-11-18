@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选项卡</title>
+    <style>
+        #div1
+        {
+            margin: auto;
+        }
+        button{
+            width: 72px;
+            height: 40px;
+        }
+        .div2
+        {
+            width:300px;
+            height:200px;
+            border:1px #35c32d solid;
+            border-top: #ffffff;
+            display:none;
+            margin-bottom: auto;
+        }
+    </style>
+</head>
+<body>
+<div id="div1">
+    <button>图片</button>
+    <button>新闻</button>
+    <button>热点</button>
+    <button>视频</button>
+    <div class="div2" style="display:block;">其实啥图也没有</div>
+    <div class="div2">你想了解点什么呢</div>
+    <div class="div2">节哀，你的男神有女朋友了</div>
+    <div class="div2">你说你到底想干嘛</div>
+</div>
+
+<script>
+    window.onload=function(){
+        var odiv=document.getElementById('div1');
+        var btn=odiv.getElementsByTagName('button');
+        var div2=odiv.getElementsByTagName('div') ;
+
+        for(i=0;i<btn.length;i++)
+        {
+            btn[i].index=i;
+            btn[i].onmousemove = function()
+            {
+                for(i=0;i<btn.length;i++)
+                {
+                    btn[i].className = '';
+                    div2[i].style.display='none';
+                }
+                this.className = 'active';
+                div2[this.index].style.display='block';
+            }
+        }
+    }
+</script>
+</body>
+</html>
