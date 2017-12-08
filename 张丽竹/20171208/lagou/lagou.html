@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>拉勾数据练习</title>
+  <link rel="stylesheet" type="text/css" href="./lagou.css">
+</head>
+<body>
+  <header></header>
+  <script type="text/template" id="tempStr">
+    <section>
+      <!-- 上 -->
+      <aside>
+        <!-- 上 左 -->
+        <div class="left-info">
+          <!-- 标签内添加职位名称、工作地点、发布时间 -->
+          <a href="#"><%= positionName %> [<%= city %>]</a>&nbsp;<span class="fabutime"><%= formatCreateTime %></span><br>
+          <!-- 添加薪资范围、工作经验及学历 -->
+          <span class="salary"><%= salary %></span>&nbsp;&nbsp;&nbsp;<span class="sub"><%= workYear %> / <%= education %></span>
+        </div>
+        <!-- 上 右 -->
+        <div class="right-info">
+          <!-- 添加公司名字 -->
+          <a href="#"><%= companyShortName %></a><br>
+          <!-- 添加公司所属领域、类型 -->
+          <span class="sub"><%= industryField %> / <%= financeStage %></span>
+        </div>
+      </aside>
+      <!-- 下 -->
+      <article>
+        <!-- 下 左 -->
+        <div class="left-tag">
+          <!-- 职位范围 -->
+          <span class="single-tag">
+            <%= positionType %>
+          </span>
+        </div>
+        <!-- 下 右 -->
+        <!-- 公司待遇 -->
+        <div class="right-tag">
+          <%= positionAdvantage %>
+        </div>
+      </article>
+    </section>
+  </script>
+  <script src="./myajax.js"></script>
+  <script src="./underscore.js"></script>
+  <script src="./lagou.js"></script>
+</body>
+</html>

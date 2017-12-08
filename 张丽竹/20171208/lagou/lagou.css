@@ -1,0 +1,87 @@
+/* 去掉默认样式 */
+body {
+    margin: 0;
+}
+/* 页面整体样式 */
+header {
+    width: 800px;
+    margin: 20px auto;
+}
+/* 每一条信息的样式 */
+section {
+    width: 100%;
+    margin: 15px 30px;
+    border: 1px solid #ccc;
+}
+/* 上下两部分的公共样式 */
+aside,
+article {
+    width: 100%;
+    overflow: hidden;
+}
+/* 下半部分 */
+article {
+    background: #ddd;
+}
+/* 上半部分 */
+aside .left-info,
+aside .right-info {
+    float: left;
+    margin: 20px 15px;
+}
+/* 下半部分 */
+article .left-tag,
+article .right-tag {
+    float: left;
+    margin: 10px 15px;
+}
+/* 上 左 */
+aside .left-info {
+    width: 444px;
+}
+/* 上 右 */
+aside .right-info {
+    width: 296px;
+}
+/* 职位连接 */
+aside a {
+    color: #00b38a;
+    font-size: 16px;
+    text-decoration: none;
+}
+/* 发布时间 */
+aside .fabutime {
+    font-size: 14px;
+    color: #ccc;
+}
+/* 薪资 */
+aside .left-info .salary {
+    font-size: 16px;
+    color: #fd5f39;
+}
+/* 要求 */
+aside .sub {
+    font-size: 14px;
+    color: #333;
+}
+/* 下 左 */
+article .left-tag {
+    width: 444px;
+}
+/* 下 右 */
+article .right-tag {
+    width: 296px;
+}
+/* 工作所属范围 */
+article .left-tag .single-tag {
+    font-size: 12px;
+    color: #333;
+    padding: 2px 4px;
+    border: 1px solid #ccc;
+    border-radius: 5%;
+}
+/* 公司待遇 */
+article .right-tag {
+    font-size: 14px;
+    color: #333;
+}
